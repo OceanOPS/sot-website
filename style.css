@@ -209,6 +209,7 @@ body {
   color: #020E54;
   text-align: center;
   padding: 50px 20px;
+  border-top: 1px dashed lightgrey;
 }
 
 .statistics h2 {
@@ -273,6 +274,10 @@ body {
   padding: 50px 20px;
 }
 
+.events h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
 .events-grid {
   display: flex;
   justify-content: center;
@@ -389,6 +394,29 @@ body {
   max-width: 300px; /* Limit the width on larger screens */
 }
 
+/* Navigation pills*/
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.nav-pill {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background-color: #f0f0f0;
+  color: #020E54;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.nav-pill:hover {
+  background-color: #184596;
+  color: white;
+}
+
+
 /* Article Section contains two coloumn: left image, right text paragraph */
 .article-section {
   background-color: white;
@@ -411,6 +439,12 @@ body {
 
 .article-section .floating-image {
   float: left;
+  margin: 20px 50px 20px 20px;
+  max-width: 400px;
+}
+
+.article-section .floating-image-right {
+  float: right;
   margin: 0 20px 20px 0;
   max-width: 400px;
 }
@@ -419,6 +453,15 @@ body {
   width: 100%;
   height: auto;
   border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+.article-section .floating-image-right img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border: 1px solid #e0e0e0;
 }
@@ -529,6 +572,81 @@ body {
   text-align: center; 
   margin-top: 10px; 
 }
+
+/* Article Section contains 3 parts*/
+
+.article-section .threeparts-left {
+  flex: 1;
+  max-width: 360px; 
+  min-width: 250px;  
+}
+
+.article-section .threeparts-left figure {
+  max-width: 360px; 
+  margin: 0; 
+}
+
+.article-section .threeparts-left img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 8px;
+}
+
+.article-section .threeparts-left figcaption {
+  font-size: 0.9rem; 
+  color: #555; 
+  text-align: center; 
+  margin-top: 10px; 
+}
+
+.article-section .threeparts-mid {
+  flex: 1;
+  max-width: 360px; 
+  min-width: 250px;  
+}
+
+.article-section .threeparts-mid figure {
+  max-width: 360px; 
+  margin: 0; 
+}
+
+.article-section .threeparts-mid img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 8px;
+}
+
+.article-section .threeparts-mid figcaption {
+  font-size: 0.9rem; 
+  color: #555; 
+  text-align: center; 
+  margin-top: 10px; 
+}
+
+.article-section .threeparts-right {
+  flex: 2;
+  max-width: 360px; 
+  min-width: 250px;  
+}
+
+.article-section .threeparts-right figure {
+  max-width: 360px; 
+  margin: 0; 
+}
+
+.article-section .threeparts-right img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 8px;
+}
+
+.article-section .threeparts-right figcaption {
+  font-size: 0.9rem; 
+  color: #555; 
+  text-align: center; 
+  margin-top: 10px; 
+}
+
 
 /* TT Section contains 4 parts*/
 
@@ -719,21 +837,70 @@ body {
   color: #020E54; /* Use dark blue for bold text */
 }
 
-/* Custom Bullets Styling */
-.custom-bullets {
-  list-style-type: disc; /* Use bullet points */
-  padding-left: 20px; /* Indent for better readability */
-  margin-bottom: 20px; /* Add spacing below the list */
+
+/* Reset default bullets */
+ul.custom-bullets,
+ul.custom-bullets ul,
+ul.custom-bullets ul ul {
+  list-style: none;
+  padding-left: 1.4rem;
+  margin: 0.4rem 0;
 }
 
-.custom-bullets li {
-  margin-bottom: 5px; /* Space between bullet items */
-  text-align: justify; /* Justify text for better alignment */
-  line-height: 1.8; /* Improve readability with more line spacing */
+/* Tier 1 */
+ul.custom-bullets > li {
+  position: relative;
+  margin: 0.3rem 0;
+  padding-left: 1.2rem;
 }
 
-.custom-bullets b {
-  color: #020E54; /* Highlight bold text in dark blue */
+ul.custom-bullets > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 8px;
+  height: 8px;
+  background: #020E54;   
+  border-radius: 50%;
+}
+
+/* Tier 2 */
+ul.custom-bullets ul > li {
+  position: relative;
+  margin: 0.25rem 0;
+  padding-left: 1.2rem;
+}
+
+ul.custom-bullets ul > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 5px;
+  height: 5px;
+  border: 2px solid #020E54; /* modern blue */
+  background: #FFFFFF;   
+  border-radius: 50%;
+}
+
+/* Tier 3 */
+ul.custom-bullets ul ul > li {
+  position: relative;
+  margin: 0.2rem 0;
+  padding-left: 1.1rem;
+}
+
+ul.custom-bullets ul ul > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 2px;
+  height: 2px;
+  border: 2px solid #020E54; /* modern blue */
+  background: #FFFFFF;   
+  border-radius: 50%;
 }
 
 /* Simple Tables */
@@ -951,9 +1118,13 @@ th {
   .article-section .left-image, 
   .article-section .twoparts-left, 
   .article-section .twoparts-right, 
+  .article-section .threeparts-left, 
+  .article-section .threeparts-mid, 
+  .article-section .threeparts-right, 
   .article-section .fourparts-one, 
   .article-section .fourparts-two, 
   .article-section .fourparts-three, 
+  .article-section .fourparts-four, 
   .article-section .right-text {
     max-width: 100%; /* Ensure both columns span the full width */
   }
@@ -1039,6 +1210,16 @@ th {
     border-radius: 0; /* Remove rounded corners for a simpler look */
   }
 
+  .article-section .threeparts-left img {
+    border-radius: 0; /* Remove rounded corners for a simpler look */
+  }
+  .article-section .threeparts-mid img {
+    border-radius: 0; /* Remove rounded corners for a simpler look */
+  }
+  .article-section .threeparts-right img {
+    border-radius: 0; /* Remove rounded corners for a simpler look */
+  }
+
   .article-section .fourparts-one img {
     border-radius: 0; /* Remove rounded corners for a simpler look */
   }
@@ -1046,6 +1227,9 @@ th {
     border-radius: 0; /* Remove rounded corners for a simpler look */
   }
   .article-section .fourparts-three img {
+    border-radius: 0; /* Remove rounded corners for a simpler look */
+  }
+  .article-section .fourparts-four img {
     border-radius: 0; /* Remove rounded corners for a simpler look */
   }
 
