@@ -9,15 +9,15 @@
   <meta name="keywords" content="sot ship observation team status network jcomm goos gcos observations
   gis google earth cooperation panel weather climate sea temperature air atmosphere pressure meteorology
   climate ocean oceanography marine wind wave observing system ioc wmo unesco jcommops vos oceanops">
-  <link rel="icon" type="image/png" href="figures/favicon.png">
-  <title>Index | Ship Observation Team</title>
+  <link rel="icon" type="image/png" href="figures/sot-md.png">
+  <title>Ship Observation Team</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
   
 <!-- Header Section -->
-  <section class="header">
+  <section class="header" id="topmost">
       <div class="container header-flex">
           <div class="header-content">
             <h1><a href="index.html" style="text-decoration: none; color: inherit;">SOT</a></h1>
@@ -35,33 +35,36 @@
           <ul class="submenu">
             <li><a href="about.html">About us</a></li>
             <li><a href="sessions.html">Sessions</a></li>
+            <li><a href="vos.html">VOS programme</a></li>
+            <li><a href="asap.html">ASAP programme</a></li>
+            <li><a href="xbtsoop.html">XBT SOOP</a></li>
             <li><a href="contact_us.html">Contact us</a></li>
           </ul>
         </li>
         <li class="menu-item">
-          <a href="network_status_and_map.html">Data and Network</a>
+          <a href="metadata.html">Data and Network</a>
           <ul class="submenu">
-            <li><a href="network_status_and_map.html">Metadata format</a></li>
-            <li><a href="data_access.html">GTS headers</a></li>
-            <li><a href="qc.html">ASAP programme</a></li>
-            <li><a href="share_data.html">VOS programme</a></li>
+            <li><a href="metadata.html">Metadata format</a></li>
+            <li><a href="gts_headers.html">GTS headers</a></li>
+            <li><a href="data_flow.html">Data flow</a></li>
+            <li><a href="gdac_delayed.html">GDAC delayed data mode</a></li>
           </ul>
         </li>
         <li class="menu-item">
           <a href="standard.html">Resources</a>
           <ul class="submenu">
-            <li><a href="standard.html">Standard and best practices</a></li>
-            <li><a href="publications.html">Publications</a></li>
+            <li><a href="vos_resources.html">VOS operational resources</a></li>
+            <li><a href="vos_bp.html">VOS best practices</a></li>
+            <li><a href="pmo.html">Port Meteorological Officers</a></li>
+            <li><a href="pmo_bp.html">PMO best practices</a></li>
             <li><a href="gallery.html">Gallery</a></li>
           </ul>
         </li>
         <li class="menu-item">
-          <a href="platform.html">Learning</a>
+          <a href="10000ships.html">Learning</a>
           <ul class="submenu">
-            <li><a href="platform.html">10.000 Ships initiative</a></li>
-            <li><a href="barometer_upgrade.html">WIS2.0</a></li>
-            <li><a href="data_uses.html">GDAC delayed data mode</a></li>
-            <li><a href="deployment.html">Data formats</a></li>
+            <li><a href="10000ships.html">10.000 Ships initiative</a></li>
+            <li><a href="wis2.html">WIS2.0</a></li>
           </ul>
         </li>
     </ul>
@@ -85,12 +88,12 @@
       style="background-image: url('figures/headbanner00.png');">
       <div class="hero-column-left">
         <a href="index.html">
-          <img src="figures/favicon.png" alt="DBCP Logo" style="max-width: 120px;">
+          <img src="figures/sot-md.png" alt="SOT Logo" style="max-width: 120px;">
         </a>
       </div>
       <div class="hero-column-mid">
         <div class="hero-content">
-          <h1>Supporting climate resilience and sustainable ocean governance</h1>
+          <h1>Ships at sea: observing our ocean for a more resilient and sustainable future.</h1>
         </div>
         <div class="hero-logos">
           <a href="https://www.wmo.int" >
@@ -109,116 +112,210 @@
   </section>
 
 
+
 <!-- WARNING -->
 <!-- WARNING -->
 <!-- WARNING: Please be aware of not changing anything beyond this line unless exeptionally necessary, thank you -->
 
-  <!-- Statistics Section -->
-  <section class="statistics">
-    <div class="container">
+
+
+<!-- Statistics Section -->
+<section class="statistics">
+  <div class="container">
     <!--p style="padding: 5px; background-color:yellow;"><a href="https://www.ocean-ops.org/dbcp/" >Click here to access the old SOT website</a></p-->
-    <h2 style="margin-bottom: 20px;">Listening to the ocean — tools that keep watch</h2>
+    <h2 style="margin-bottom: 20px;">One hundred years of ships keeping watch</h2>
     <div class="stats-grid">
       <div class="stat-item">
-        <h3>1,500+</h3>
-        <p>active buoys</p>
+        <h3>3,000+</h3>
+        <p>ships contributing observations worldwide</p>
       </div>
       <div class="stat-item">
-        <h3>361 million km2</h3>
-        <p>ocean areas covered</p>
+        <h3>3</h3>
+        <p>programmes — VOS, ASAP and XBT SOOP — coordinated</p>
       </div>
       <div class="stat-item">
-        <h3>50+ Years</h3>
-        <p>of observing and monitoring service</p>
+        <h3>170+</h3>
+        <p>years of continuous marine data, dating to Brussels 1853</p>
       </div>
     </div>
-      <p style="margin-top: 20px;">Every day, thousands of instruments float across our oceans, collecting critical data that powers life-saving forecasts and global climate models. At the heart of this effort is the <b>Data Buoy Cooperation Panel (DBCP)</b>, a global program coordinated by <b>WMO</b> and <b>IOC-UNESCO</b>, dedicated to managing networks of <b>autonomous ocean buoys</b>.</p>
-      <p style="margin-top: 20px;">These tools include <b>drifting buoys</b>, <b>moored buoys</b>, and <b>tsunameters</b>. Each with a unique role. Drifting buoys move with ocean currents, capturing data across vast regions. Moored buoys remain anchored, providing stable, long-term observations. Tsunameters, placed strategically in specific places on the sea, are designed to detect tsunami-generating pressure anomalies, supporting tsunami warning systems.</p>
-      <p style="margin-top: 20px;">With over <b>1,250 drifting buoys</b> and <b>400 moored buoys</b> in the DBCP network, these platforms fill critical gaps in regions where no ships or satellites can reach. Every data point they collect helps bring the ocean’s voice into weather centers, research labs, and climate action rooms worldwide.</p>
-      <!--p style="margin-top: 20px;"><b>Together, we can ensure the ocean’s voice is heard, shaping a more resilient and sustainable future for all.</b></p-->
-      </div>
-  </section>
-
-<!-- Article Section with two coloumn -->
-
-<!--section class="article-section">
-  <div class="container">
-    <div class="content">
-     <div class="twoparts-left">
-        <h2>What we learn from the waves — ocean parameters that matter</h2>
-        <p style="text-align: left">What secrets does the ocean hold? The tools supported by the DBCP help us find answers, measuring <b>Essential Ocean Variables (EOVs)</b> that are fundamental to understanding Earth's systems. These include <b>sea surface temperature</b>, <b>salinity</b>, <b>air and sea pressure</b>, <b>ocean currents</b>, <b>humidity</b>, and <b>wave height</b>.</p>
-        <p style="text-align: left">This data may seem invisible, but its impact is immense. A slight shift in sea surface temperature, for example, can signal the arrival of El Niño, disrupt global rainfall patterns, or trigger marine heatwaves that damage coral reefs. Real-time pressure readings are key for predicting tropical cyclones. Current velocity helps improve routing for ships and model storm surge pathways.</p>
-        <p style="text-align: left">By standardizing and expanding these observations through robust buoy networks, the DBCP helps scientists and meteorologists <b>see the bigger picture</b> — turning the vast, unpredictable ocean into a well-monitored ally in climate resilience and operational safety.</p>
-     </div>
-     <div class="twoparts-right">
-        <figure>
-          <img src="figures/thumbnail_deployment.jpg" alt="deployment of a moored buoy" />
-        </figure>
-     </div>
-   </div>
-
-  </div>
-</section-->
-
-
-
-  <!-- News Section -->
-  <section class="news" style="border-top: 1px dashed lightgrey;">
-    <h3><i>Every observation in the ocean contributes to better predictions, safer seas, and more resilient communities. <br> Together, we can unlock the potential of ocean observations to protect lives, support economies, and build a climate-resilient future.</i></h3><br>
-    <div class="news-grid">
-      <div class="news-item">
-        <a href="network_status_and_map.html"> 
-        <h3>Our observation network status</h3> 
-        </a>
-        <p>Buoys dispersed over wide ocean to capture the latest of the atmosphere and near surface ocean condition.</p>
-      </div>
-      <div class="news-item">
-        <a href="standard.html">
-        <h3>High quality and standardized observation</h3>
-        </a>
-        <p>The observation is carried out through international standard and quality control procedure.</p>
-      </div>
-      <div class="news-item">
-        <a href="barometer_upgrade.html">
-        <h3>Barometer upgrade programme</h3>
-        </a>
-        <p>Special collaboration programme to equipe the current available buoys with additional barometer sensors.</p>
-      </div>
+      <p style="margin-top: 20px;">The ocean covers more than two-thirds of our planet's surface. Understanding it — and the atmosphere above it — is fundamental to everything from daily weather forecasts to long-term climate science. Yet for most of Earth's history, this vast space was nearly invisible to science. Ships changed that.</p>
+      <p style="margin-top: 20px;">For over a century, vessels crossing the world's oceans have been doing more than carrying cargo and passengers: they have been acting as humanity's eyes at sea. The <b>Ship Observations Team (SOT)</b> — a joint programme of the <a href="https://www.wmo.int" >World Meteorological Organization (WMO)</a> and the <a href="https://www.ioc.unesco.org/en">Intergovernmental Oceanographic Commission (IOC) of UNESCO</a> — coordinates this global effort, bringing together three of the most enduring and impactful marine observation programmes in existence: the <a href="vos.html">Voluntary Observing Ship (VOS)</a> Scheme, the <a href="asap.html">Automated Shipboard Aerological Programme (ASAP)</a>, and the <a href="#">eXpendable BathyThermographs (XBTs) Ship-of-Opportunity Programme (SOOP)</a>.</p>
+      <p style="margin-top: 20px;">Together, these programmes collect the surface meteorological, upper-air, and upper-ocean observations that fuel numerical weather prediction, climate monitoring, marine safety services, and ocean science — reaching parts of the ocean that no satellite or autonomous platform can fully replace.</p>
     </div>
-  </section>
+</section>
 
 
-<!-- Article Section with two coloumn -->
 
-<section class="article-section" >
+<!-- Article Section with 3 coloumn -->
 
+<section class="article-section">
   <div class="container">
+    <h2 style="text-align: center">Three programmes. One mission. Every ocean.</h2>
+
     <div class="content">
-     <div class="twoparts-left">
-     <!--div class="twoparts-left"
-  style="background-image: url('figures/session_01.jpg'); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;"-->
-        <figure>
-          <img src="figures/session_01.jpg" alt="DBCP-40" />
-        </figure>
+
+     <div class="threeparts-left">
+        <h3>Voluntary Observing Ship (VOS) Scheme</h3>
+        <p style="text-align: left">Every day, around 2,000 merchant ships, ferries, and research vessels observe
+the weather at their location and transmit those observations in near real time
+to national meteorological services worldwide. The VOS Scheme has been doing
+this <a href="vos.html#vos_history">since 1853</a> — and it remains irreplaceable. Ships measure atmospheric
+pressure, wind, temperature, humidity, sea surface temperature, waves, and
+sea ice, providing ground truth that satellites and models cannot replicate.
+</p>
+        <p style="text-align: left; margin: 0 0 0 0;">→ <a href="vos.html">Learn about VOS </a> →</p>
      </div>
-     <div class="twoparts-right" style="background-color:#184596; padding: 20px; color: white;" >
-     <h2>Beneath the surface of the State of Climate Report</h2>
-        <p style="text-align: left">Behind every <b>WMO State of the Climate Report</b> is a story told by the ocean. Much of the report’s understanding of <b>ocean heat content</b>, <b>sea level rise</b>, and <b>marine biodiversity change</b> relies on high-quality data provided by global ocean observation networks — including the DBCP’s buoy systems.</p>
-        <p style="text-align: left">As the ocean absorbs over 90% of Earth’s excess heat, accurate, long-term temperature and pressure data from buoys help track <b>warming trends</b> and <b>thermal expansion</b>, a major driver of sea level rise. These measurements also support models that assess how changing ocean conditions impact <b>marine ecosystems</b> and <b>fisheries</b> — lifelines for millions.</p>
-        <p style="text-align: left">Thanks to the collaborative framework of <b>WMO</b> and <b>IOC-UNESCO</b>, the DBCP feeds critical data into climate research and policy efforts, ensuring decisions about our future oceans are informed by real, reliable evidence.</p>
+
+     <div class="threeparts-mid">
+        <h3>Automated Shipboard Aerological Programme (ASAP)</h3>
+        <p style="text-align: left">The atmosphere doesn't stop at the surface. ASAP stations aboard merchant ships launch weather balloons from the open ocean, collecting vertical profiles of temperature, humidity, and wind from the surface to 30 kilometres altitude — over areas where no land-based radiosonde stations exist. Around 21 ships
+currently provide these critical upper-air soundings, concentrated in the data-sparse North Atlantic and expanding globally.</p>
+        <p style="text-align: left; margin: 0 0 0 0;">→ <a href="asap.html">Learn about ASAP</a> →</p>
      </div>
-   </div>
+
+     <div class="threeparts-right">
+        <h3>eXpendable BathyThermographs (XBTs) Ship-of-Opportunity Programme (SOOP)</h3>
+        <p style="text-align: left">Beneath the surface, the ocean holds answers to some of the most important questions in climate science. SOOP deploys expendable bathythermographs (XBTs) and thermosalinographs (TSGs) from merchant vessels on regular routes, measuring upper ocean temperature and salinity down to 1,000 metres. Approximately 60 active ships deploy around 19,000 XBTs each year on 36 repeat sampling lines across the world's ocean basins.
+</p>
+        <p style="text-align: left; margin: 0 0 0 0;">→ <a href="xbtsoop.html">Learn about XBT SOOP</a> →</p>
+     </div>
+
+     </div>
 
   </div>
 </section>
-  
-  <!-- Events Section -->
-  <section class="events" style="border-top: 1px dashed lightgrey;">
-    <h2 style="margin-bottom: 20px;">Events</h2>
-    <div class="events-grid">
+
+
+
+<!-- Call for contribution Section -->
+
+<section class="article-section">
+  <div class="container">
+
+    <div class="content content-float">
+        <figure class="floating-image-right" style="max-width: 600px;">
+          <img src="figures/CelesteSaulo.png" alt="A picture of Ms. Saulo of the WMO">
+        </figure>
+        <div class="text-content">
+        <h2 style="text-align: center">Your ship could be part of something bigger</h2>
+        <p style="text-align: left"><b><i>
+          "For over a century, commercial ships have been acting as our eyes in the
+ocean. A global alliance with the shipping industry is what we need to scale
+up our ship-based observing infrastructure and unlock global benefit for
+operations, forecasting, early warnings, climate understanding and environmental
+stewardship."</i> — Celeste Saulo, Secretary-General of the World Meteorological Organization</b></p>
+        <p style="text-align: left">
+          The ocean covers over 70% of our planet — yet vast areas remain under-observed.
+Every gap in coverage is a gap in our ability to forecast weather accurately,
+warn communities of approaching storms, and understand how our climate is
+changing. The good news: there is a straightforward and time-honoured way to
+help close those gaps, and it sails across every ocean in the world every day.
+        </p>
+        <p style="text-align: left">
+          Your vessel can be part of the solution. Joining the VOS Scheme or SOOP is
+simpler than you might think. Shipping companies receive instruments, training,
+and technical support at no charge. Ships' officers gain access to the
+meteorological services that keep crews and cargo safe. And the data collected
+feeds directly into operational forecasting systems used by weather centres in
+every corner of the world.
+        </p>
+        </div>
+    </div>
+
+    <div class="news-grid">
+      <div class="news-item" style="max-width: 270px;">
+        <a href="#"> 
+        <h3>Join the VOS Scheme</h3> 
+        </a>
+        <p style="text-align: left">Merchant ships, ferries, research vessels, and sailing yachts are all welcome.
+Your officers are already watching the weather — with a small additional step,
+those observations become part of a global record.</p>
+        <p style="text-align: left;"><a href="#">Find out how to join</a> →</p>
+      </div>
+      <div class="news-item" style="max-width: 270px;">
+        <a href="#"> 
+        <h3>Contribute the ASAP</h3> 
+        </a>
+        <p style="text-align: left">Does your vessel operate regular ocean crossings — especially in the data-sparse North Atlantic or beyond? ASAP stations aboard merchant ships launch weather balloons that profile the atmosphere from the surface to 30 km altitude. With equipment installed and maintained at no cost to you, your ship fills a gap that no land-based station can reach.</p>
+        <p style="text-align: left;"><a href="#">Find out how to contribute</a> →</p>
+      </div>
+      <div class="news-item" style="max-width: 270px;">
+        <a href="#">
+        <h3>Participate in SOOP</h3>
+        </a>
+        <p style="text-align: left">Does your ship operate on a regular oceanic route? You may be the ideal
+candidate for hosting an XBT sampling programme. Scientists and technicians
+handle the technical details — you provide the platform and the route.
+</p>
+        <p style="text-align: left;"><a href="#">Find out how to participate</a> →</p>
+      </div>
+      <div class="news-item" style="max-width: 270px;">
+        <a href="https://www.aoml.noaa.gov/ships-of-opportunity/">
+        <h3>10,000 Ships Initiative</h3>
+        </a>
+        <p style="text-align: left">A bold new global partnership aims to equip 10,000 commercial vessels with
+standardized metocean sensors by 2035 — transforming the maritime industry
+into the world's most powerful ocean observing network. Be part of history.
+</p>
+        <p style="text-align: left;"><a href="#">Learn about 10,000 Ships</a> →</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+<!-- Map section -->
+
+<section class="article-section" >
+  <div class="container">
+    <h2 style="text-align: center">The ocean in real time — find our ships</h2>
+
+    <p style="text-align: left">The SOT maintains a live map of all active VOS, ASAP, and SOOP platforms through <a href="https://www.ocean-ops.org">OceanOPS</a> — the operational coordination and monitoring centre of the Global Ocean Observing System. Use the interactive map below to explore where ships are operating today, what they are measuring, and how the global network covers the world's ocean basins.</p>
+
+    <div id="map-preview"  style="text-align: center; ">
+        <p id='iframe-loader'>loading maps...</p>
+        <iframe style="border: 0;width: 1000px;height:720px;" onerror="document.getElementById('iframe-loader').innerHTML = 'Error while loading maps'" onload="document.getElementById('iframe-loader').style.display = 'none'"  src="https://www.ocean-ops.org/maps/static/index.html?t=sot"></iframe>
+    </div>
+
+    <p style="text-align: center">(Link to full-screen map at <a href="https://www.ocean-ops.org/maps/static/index.html?t=sot">ocean-ops.org/board?t=SOT</a>)</p>
+
+  </div>
+</section>
+
+
+
+<!-- Message section -->
+
+<section class="article-section" >
+  <div class="container">
+    <h2 style="text-align: center">A challenge anyone with a vessel can help solve</h2>
+
+    <p style="text-align: left">There is currently a stark imbalance in global weather observing: we use 15 times fewer data over the ocean than over land to predict the weather
+worldwide. The consequence is real — marine forecasts are less accurate than land forecasts, storm warnings over the ocean are harder to issue with confidence, and climate models carry larger uncertainties in ocean regions.</p>
+    <p style="text-align: left">Ships already crossing those oceans are the most practical solution we have. Whether your vessel operates a busy trans-Pacific container route, a North Atlantic ferry crossing, or an Antarctic research transect, you are sailing
+through data-sparse regions where every observation counts.
+</p>
+    <p style="text-align: left">The SOT provides the infrastructure, the expertise, and the international framework to put your ship's journey to work for science. The ocean asks us to observe it — the SOT shows us how.
+</p>
+
+    <h3 style="text-align: center; background-color: #184596; color: white; padding: 10px"><i>We are all connected by the ocean. Join the network that keeps watch.</i></h3>
+
+  </div>
+</section>
+
+
+
+<!-- Events Section -->
+
+<section class="events" style="border-top: 1px dashed lightgrey;">
+  <div class="container">
+    <h2 style="text-align: center">Events</h2>
+    <div class="events-grid" style="padding-bottom: 20px; padding-top:20px;">
       <div class="events-item">
         <p>Meeting</p> 
         <p> <img src="figures/calendar_icon.png" alt="Date Icon" style="width: 15px; height: auto;"> <b>15/09/2026 - 17/09/2026</b></p>
@@ -238,19 +335,9 @@
         <p>14th session of the Ship Observation Team (SOT)</p>
       </div>
     </div>
-  </section>
-
-
-<section class="article-section">
-  <div class="container">
-        <h2 style="text-align: center">Supporting the most vulnerable — ocean data for resilience</h2>
-        <p style="text-align: center">Small Island Developing States (SIDS) and Least Developed Countries (LDCs) are on the frontlines of climate change — yet often lack the observational infrastructure needed for timely, reliable forecasts. Through global collaboration and regional partnerships, the <b>Data Buoy Cooperation Panel</b> works to fill that gap.</p>
-        <p style="text-align: center">In the South Pacific, for instance, buoy deployments coordinated through DBCP Action Groups have improved wave forecasting and weather monitoring — crucial for fisheries, transport, and disaster response. In East Africa, real-time ocean data supports surge warnings and enhances storm prediction along vulnerable coasts.</p>
-        <p style="text-align: center">By promoting <b>capacity building</b>, encouraging <b>technology transfer</b>, and supporting <b>regional deployment programs</b>, the DBCP ensures that ocean data reaches those who need it most. Initiatives led by the Task Team on Capacity Building empower local experts, while partnerships with agencies like OceanOPS and IOC regional alliances make long-term resilience possible.</p>
-        <h3 style="text-align: center; background-color: #184596; color: white; padding: 10px""><i>We are all connected by the ocean. Let’s work together to ensure no coast is left behind.</i></h3>
+        <p style="text-align: center">Click <a href="#">here</a> for past meeting and events.</p>
   </div>
 </section>
-
 
 
 
@@ -261,24 +348,24 @@
   <!-- Footer Section -->
   <footer class="footer">
   <div class="container">
-      <img src="figures/2.png" alt="DBCP-40" style="max-height:200px; max-width: 100%; "/>
+      <img src="figures/2.png" alt="SOT part of GOOS network" style="max-height:200px; max-width: 100%; "/>
   </div>
     <div class="container footer-content">
       <div class="footer-left">
-        <!--h4>About the DBCP</h4-->
+        <h4>About the SOT</h4>
         <p>
-          The DBCP focuses on advancing ocean observation through collaborative efforts, enhancing data collection for marine and climate research.
+          The Ship Observations Team coordinates global ship-based ocean and atmospheric observations — sustaining a record that has served science, safety, and climate understanding for more than 170 years.
         </p>
       </div>
       <div class="footer-social">
-        <h4>DBCP Newsletter</h4>
-        <div class="social-icons">
+        <h4></h4>
+        <!--div class="social-icons">
           <a href="newsletter.html"><img src="figures/newsletter_icon.png" alt="Newsletter Icon" style="width: 40px; height: auto;"></a>
-        </div>
+        </div-->
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 <a href="index.html">Ship Observation Team (SOT)</a></p>
+      <p>© 2026 <a href="index.html">Ship Observation Team (SOT) </a></p>
       <p class="footer-bottom-links"><a href="copyright.html#Copyright">Copyright</a> | <a href="copyright.html#Disclaimer">Disclaimer</a> | <a href="copyright.html#Privacy_Policy">Privacy Policy</a></p>
     </div>
   </footer>
