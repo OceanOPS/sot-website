@@ -278,7 +278,8 @@ into the world's most powerful ocean observing network. Be part of history.
 
     <div id="map-preview"  style="text-align: center; ">
         <p id='iframe-loader'>loading maps...</p>
-        <iframe style="border: 0;width: 1000px;height:720px;" onerror="document.getElementById('iframe-loader').innerHTML = 'Error while loading maps'" onload="document.getElementById('iframe-loader').style.display = 'none'"  src="https://www.ocean-ops.org/maps/static/index.html?t=sot"></iframe>
+        <!--iframe style="border: 0;width: 1000px;height:720px;" onerror="document.getElementById('iframe-loader').innerHTML = 'Error while loading maps'" onload="document.getElementById('iframe-loader').style.display = 'none'"  src="https://www.ocean-ops.org/maps/static/index.html?t=sot"></iframe-->
+        <iframe class="responsive-iframe" style="border: 0;" onerror="document.getElementById('iframe-loader').innerHTML = 'Error while loading maps'" onload="document.getElementById('iframe-loader').style.display = 'none'"  src="https://www.ocean-ops.org/maps/static/index.html?t=sot"></iframe>
     </div>
 
     <p style="text-align: center">(Link to full-screen map at <a href="https://www.ocean-ops.org/maps/static/index.html?t=sot">ocean-ops.org/board?t=SOT</a>)</p>

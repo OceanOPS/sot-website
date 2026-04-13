@@ -1041,6 +1041,28 @@ th {
 
 /* Responsive Design with Media Queries */
 
+/* Responsive Map Container */
+#map-preview {
+  width: 100%;
+  max-width: 1000px; /* Maintains the original design width on large screens */
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.responsive-iframe {
+  width: 100%;
+  aspect-ratio: 1000 / 720; /* Matches your original dimensions (1000x720) */
+  border: none;
+}
+
+/* Fallback for older browsers that don't support aspect-ratio */
+@supports not (aspect-ratio: 1000 / 720) {
+  .responsive-iframe {
+    height: 720px;
+  }
+}
+
 /* Adjust for tablets and smaller devices */
 
 @media (max-width: 768px) {
@@ -1162,6 +1184,8 @@ th {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
+.responsive-iframe { 
+    min-height: 400px; }
 }
 
 /* ---------------------- */
