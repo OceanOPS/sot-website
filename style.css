@@ -502,6 +502,25 @@ body {
 }
 
 /* ---------------------- */
+.article-section .right-text {
+  flex: 2 ;
+}
+
+/* ---------------------- */
+/* left text bigger column, right text smaller one */
+.article-section .left-text {
+  flex: 1 ;
+  max-width: 800px; 
+  min-width: 250px;  
+}
+
+.article-section .right-column {
+  flex: 2 ;
+  max-width: 300px; 
+  min-width: 250px;  
+}
+
+/* ---------------------- */
 /* Fonts */
 .article-section h2 {
   font-size: 2rem;
@@ -538,6 +557,8 @@ body {
   width: 100%; 
   height: auto; 
   border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
 }
 
 .article-section .twoparts-left figcaption {
@@ -563,6 +584,8 @@ body {
   width: 100%; 
   height: auto; 
   border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
 }
 
 .article-section .twoparts-right figcaption {
@@ -828,13 +851,13 @@ body {
 
 .numbered-list li {
   margin-bottom: 5px; 
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-align: left; 
   line-height: 1.8; 
 }
 
 .numbered-list b {
-  color: #020E54; /* Use dark blue for bold text */
+  color: #020E54; 
 }
 
 /* ---------------------- */
@@ -846,7 +869,7 @@ ul.custom-bullets ul ul {
   list-style: none;
   padding-left: 1.4rem;
   margin: 0.4rem 0;
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-align: left;
 }
 

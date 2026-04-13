@@ -19,7 +19,7 @@
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 <!-- Header Section -->
-  <section class="header">
+  <section class="header" id="topmost">
       <div class="container header-flex">
           <div class="header-content">
             <h1><a href="index.html" style="text-decoration: none; color: inherit;">SOT</a></h1>
@@ -95,7 +95,7 @@
       </div>
       <div class="hero-column-mid">
         <div class="hero-content">
-          <h1>XBT SOOP — reading the ocean's temperature from the world's shipping lanes</h1>
+          <h1>From ship's bridge to global forecast — tracing the journey of a marine observation</h1>
         </div>
         <div class="hero-logos">
           <a href="https://www.wmo.int" >
@@ -114,91 +114,106 @@
   </section>
 
 
+
 <!-- WARNING -->
 <!-- WARNING -->
-<!-- WARNING: Please be aware of not changing anything above this line unless exeptionally necessary, thank you -->
+<!-- WARNING: Please be aware of not changing anything beyond this line unless exeptionally necessary, thank you -->
+
+
+
+<!-- Overview Section -->
+
+<section class="article-section">
+  <div class="container">
+    <h2 style="text-align: left">How ship observations travel from sea to science</h2>
+
+    <div class="content content-float">
+        <figure class="floating-image-right" style="max-width: 800px;">
+          <img src="figures/sometjing.png" alt="Large, clear data flow diagram — the journey of a VOS/ASAP/SOOP observation">
+        </figure>
+        <div class="text-content">
+        <p>A ship weather report takes just minutes to travel from the bridge of a vessel in the middle of the Pacific Ocean to a forecast model running in a data centre on the other side of the world. The path it follows — from observation to encoding, transmission, distribution, and archival — is a precisely coordinated international system built up over decades. Understanding this journey helps every participant in the SOT network — from ships' officers to national programme managers — see how their contribution fits into the global picture.</p>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- Article Section with 3 coloumn -->
+
+<section class="article-section">
+  <div class="container">
+    <h3 style="text-align: left">Real-time data path — technical explanation</h3>
+
+    <div class="content">
+
+     <div class="threeparts-left">
+        <p><b><i>On board the ship</i></b></p>
+        <p>Observations are recorded by ships' officers at standard synoptic hours (0000, 0600, 1200, 1800 UTC) using electronic logbook software (TurboWin or OBSJMA). The software calculates derived quantities (true wind, mean sea level pressure corrected for bridge height, dew point), applies basic quality checks, and encodes the observation in BBXX format (FM-13 SHIP code). The observation is then transmitted to shore — preferably by email, or via Inmarsat-C satellite using Special Access Code 41 (SAC41) to a Land Earth Station (LES) that accepts BBXX. Automatic Weather Stations (AWS) installed on some ships perform the surface meteorological observation autonomously, typically transmitting hourly.</p>
+     </div>
+
+     <div class="threeparts-mid">
+        <p><b><i>National collection and GTS distribution</i></b></p>
+        <p>The national meteorological service (NMS) of the receiving country collects BBXX reports — either via its own Land Earth Station, a shared LES, or email — and assembles them into Ship Bulletins. These bulletins are then formatted with the appropriate GTS headers and distributed on the GTS, where they become available to all WMO members globally. The data are assimilated into numerical weather prediction (NWP) models at major forecast centres (ECMWF, NCEP, JMA, and others) — typically within one to two hours of the observation time.</p>
+     </div>
+
+     <div class="threeparts-right">
+        <p><b><i>WIS 2.0 transition</i></b></p>
+        <p>As of January 2025, WIS 2.0 is operational and the GTS-to-WIS2 transition phase has begun. WIS 2.0 uses open web standards and a publish-subscribe mechanism to distribute data, replacing the legacy private network architecture of the GTS. SOT data are progressively being published via WIS 2.0 nodes using standardised BUFR encoding (sequence 308014 for VOS ship reports). The GTS will continue operating in parallel during the transition. For guidance on participating in WIS 2.0, see the Learning section.</p>
+          <ul class="custom-bullets">
+            <li><a href="wis2.html">WIS 2.0 — what it means for SOT</a> →</li>
+          </ul>
+     </div>
+
+     </div>
+
+  </div>
+</section>
+
 
 
 <!-- Article Section with two coloumns-->
 
 <section class="article-section">
   <div class="container">
-    <div class="content content-float">
-        <figure class="floating-image-right" style="max-width: 600px;">
-          <img src="figures/xbt.png" alt="photograph of an XBT being
-deployed from a ship bridge wing, or a temperature profile plot
-">
-        </figure>
-        <div class="text-content">
-        <h2>The Ship-of-Opportunity Programme (SOOP)</h2>
-        <p>The upper ocean — the top 1,000 metres — stores more than 90% of the excess
-heat being accumulated by Earth's climate system. How that heat is distributed,
-transported, and exchanged with the atmosphere is one of the most important
-questions in climate science. It shapes ENSO forecasts, drives regional
-climate patterns, and is a key indicator of long-term global warming. But
-measuring it across the vastness of the world's ocean basins is a formidable
-challenge.
-</p>
-        <p>Since 1980, the Ship-of-Opportunity Programme (SOOP) has been meeting that
-challenge by deploying oceanographic instruments from commercial vessels on
-regular trade routes. Rather than requiring dedicated research ships — expensive
-and limited in number — SOOP puts measurement systems onto vessels that are
-already crossing the ocean for other purposes. The result is a cost-effective,
-globally distributed network of ocean thermal observations that complements the
-Argo float programme and satellite altimetry.
-</p>
-        </div>
+
+    <h3>ASAP and SOOP data flow</h3>
+    <div class="content" >
+ 
+     <div class="twoparts-left">
+        <p><b><i>ASAP</i></b></p>
+        <p>After a sounding is completed, the ASAP ground station on board the ship encodes the upper-air profile in TEMP SHIP format. The data are transmitted via Inmarsat C to a national collection centre, where they are formatted with appropriate GTS headers and distributed globally. Inmarsat C achieves approximately 99% communication efficiency for ASAP data, ensuring near-complete data recovery. The full chain — from balloon launch to GTS distribution — typically completes within one to two hours.</p>
+     </div>
+
+     <div class="twoparts-right">
+        <p><b><i>SOOP / XBT</i></b></p>
+        <p>XBT profiles are logged and processed in real time on shipboard computers provided by the participating national programme (e.g. NOAA AOML). The data are encoded in BATHY format, automatically quality-controlled, and transmitted via satellite on the GTS, typically within 24 hours. Data are simultaneously archived at the Coriolis GDAC and NCEI in near-real time.</p>
+     </div>
     </div>
+
   </div>
 </section>
 
 
 
-  <!-- Statistics Section -->
-  <section class="statistics">
-    <div class="container">
-    <h3 style="margin-bottom: 20px; text-align: left">What SOOP measures — the instruments</h3>
-    <div class="news-grid" style="margin-bottom: 20px;">
-      <div class="news-item">
-        <h3 style="text-decoration:none">~60</h3>
-        <p>active XBT ships </p>
-      </div>
-      <div class="news-item">
-        <h3 style="text-decoration:none">~19,000</h3>
-        <p>XBTs deployed annually </p>
-      </div>
-      <div class="news-item">
-        <h3 style="text-decoration:none">36</h3>
-        <p>repeat XBT lines</p>
-      </div>
-    </div>
-      <p style="margin-top: 20px; text-align: left">The primary instrument of SOOP is the expendable bathythermograph (XBT) — a
-compact temperature probe launched from the bridge wing of a ship, typically
-4 to 6 times per day. The probe sinks through the water column on a thin wire,
-transmitting temperature at each depth to a shipboard computer that logs and
-formats the data. The wire breaks at the end of the probe's descent (typically
-around 700–900 metres), and the probe sinks to the sea floor. No recovery is
-required.
-</p>
-      <p style="margin-top: 20px; text-align: left">XBT data are automatically quality-controlled and transmitted in real time via
-satellite to the GTS, reaching data centres worldwide within 24 hours. In a
-typical year, approximately 50% of XBT deployments occur in the Pacific Ocean,
-35% in the Atlantic, and 15% in the Indian Ocean. Twenty agencies are currently
-involved in SOOP operations.
-</p>
-      <p style="margin-top: 20px; text-align: left">Beyond XBTs, SOOP also coordinates thermosalinograph (TSG) deployments — sensors
-installed in a ship's seawater intake system that continuously record sea surface
-temperature and salinity as the vessel transits. TSG data provide the largest
-single contribution to global sea surface salinity observations from in-situ
-platforms. SOOP additionally supports the measurement of atmospheric and ocean
-carbon dioxide (pCO2), fluorescence, and pigments, and coordinates the deployment
-of Argo profiling floats and surface drifters from participating vessels.
-</p>
-        <ul class="custom-bullets">
-         <li><a href="https://community.wmo.int/ship-of-opportunity-programme">Read more about XBT SOOP</a> →</li>
-        </ul>
-      </div>
-  </section>
+<section class="article-section" >
+  <div class="container">
+    <h3 style="text-align: left">Data quality monitoring</h3>
+    <p>VOS data quality is monitored continuously by several major meteorological centres, including ECMWF, Meteo France, and national weather agencies. These centres compare ship reports against NWP model outputs and flag systematic biases, coding errors, and missing reports. Monitoring statistics are distributed to national VOS Program Managers and PMOs, who are expected to investigate flagged ships and take corrective action.</p>
+    <p>A suite of online VOS quality monitoring tools — maintained by Meteo France — allows Program Managers and PMOs to assess the performance of individual ships
+and their national fleet in near real time.</p>
+            <ul class="custom-bullets">
+              <li><a href="vos_resources.html#VOS-Quality-Monitoring-Tools">VOS Quality Monitoring Tools</a> →</li>
+              <li><a href="#">Distribution of SHIP Reports (OceanOPS)</a> →</li>
+            </ul>
+  </div>
+</section>
+
+
+
+
 
 
 
@@ -214,33 +229,33 @@ of Argo profiling floats and surface drifters from participating vessels.
     <div class="content" >
      <div class="fourparts-one";>
         <figure>
-          <img src="figures/thumbnail_vos.jpg" alt="related articles"/>
-          <a href="vos.html">
-            <p style="text-align: center; ">VOS programme</p>
+          <img src="figures/thumbnail_gts_headers.jpg" alt="related articles"/>
+          <a href="gts_headers.html">
+            <p style="text-align: center; ">GTS headers</p>
           </a>
         </figure>
      </div>
      <div class="fourparts-two">
         <figure>
-          <img src="figures/thumbnail_asap.jpg" alt="related articles"/>
-          <a href="asap.html">
-            <p style="text-align: center; ">ASAP programme</p>
+          <img src="figures/thumbnail_gdac_delayed.jpg" alt="related articles"/>
+          <a href="gdac_delayed.html">
+            <p style="text-align: center;">GDACs – delayed mode data</p>
           </a>
         </figure>
      </div>
      <div class="fourparts-three">
         <figure>
-          <img src="figures/thumbnail_gdac_delayed.jpg" alt="related articles"/>
-          <a href="gdac_delayed.html">
-            <p style="text-align: center;">GDAC delayed data mode</p>
+          <img src="figures/thumbnail_contact_us.jpg" alt="related articles"/>
+          <a href="contact_us.html">
+            <p style="text-align: center;">Contact SOT</p>
           </a>
         </figure>
      </div>
      <div class="fourparts-four">
         <figure>
-          <img src="figures/thumbnail_10000ships.jpg" alt="related articles"/>
-          <a href="10000ships.html">
-            <p style="text-align: center;">10.000 ships initiative</p>
+          <img src="figures/thumbnail_metadata.jpg" alt="related articles"/>
+          <a href="metadata.html">
+            <p style="text-align: center;">Metadata format</p>
           </a>
         </figure>
     </div>
@@ -248,7 +263,6 @@ of Argo profiling floats and surface drifters from participating vessels.
     </div>
   </div>
 </section>
-
 
 
 
