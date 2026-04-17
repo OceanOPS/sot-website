@@ -692,7 +692,7 @@ body {
 .article-section .tt-one-text {
   flex: 2;
   max-width: 370px; 
-  min-width: 350px;  
+  min-width: 300px;  
 }
 
 .article-section .tt-two {
@@ -716,7 +716,7 @@ body {
 .article-section .tt-two-text {
   flex: 2;
   max-width: 370px; 
-  min-width: 350px;  
+  min-width: 300px;  
 }
 
 /* ---------------------- */
