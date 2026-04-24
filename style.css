@@ -850,7 +850,7 @@ body {
   padding-left: 20px; 
   margin-bottom: 20px; 
   font-family: Georgia, serif;
-/*  font-size: 0.9rem; */
+  font-size: 0.95rem; 
 }
 
 .numbered-list li {
@@ -874,7 +874,7 @@ ul.custom-bullets ul ul {
   padding-left: 1.4rem;
   margin: 0.4rem 0;
   font-family: Georgia, serif;
-/*  font-size: 0.9rem; */
+  font-size: 0.95rem; 
   text-align: left;
 }
 
