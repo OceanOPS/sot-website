@@ -599,6 +599,7 @@ body {
 /* Article Section contains 3 parts*/
 .article-section .threeparts-left {
   flex: 1;
+  flex-basis: 0;
   max-width: 360px; 
   min-width: 250px;  
 }
@@ -623,6 +624,7 @@ body {
 
 .article-section .threeparts-mid {
   flex: 1;
+  flex-basis: 0;
   max-width: 360px; 
   min-width: 250px;  
 }
@@ -646,7 +648,8 @@ body {
 }
 
 .article-section .threeparts-right {
-  flex: 2;
+  flex: 1;
+  flex-basis: 0;
   max-width: 360px; 
   min-width: 250px;  
 }
