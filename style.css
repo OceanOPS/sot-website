@@ -100,7 +100,8 @@ body {
   list-style-type: none;
   padding: 10px 0;
   min-width: 200px;
-  overflow-y: auto; 
+  max-width: 90vw;
+  overflow-wrap: break-word; 
 }
 
 .submenu li {
@@ -111,7 +112,7 @@ body {
   color: white;
   padding: 5px 15px;
   text-decoration: none;
-  white-space: nowrap; /* Prevent wrapping of text */
+  white-space: normal; 
 }
 
 .menu-item.open .submenu {
@@ -1060,7 +1061,7 @@ th {
 
 .responsive-iframe {
   width: 100%;
-  aspect-ratio: 1000 / 720; /* Matches your original dimensions (1000x720) */
+  aspect-ratio: 1000 / 720; /* Matches original dimensions (1000x720) */
   border: none;
 }
 
@@ -1103,6 +1104,8 @@ th {
     position: relative;
     left: 0; /* Submenu aligns within the parent list */
     border: none;
+    width: 100%;
+    min-width: unset;
   }
 
   .menu-item.show .submenu {
@@ -1126,11 +1129,11 @@ th {
     flex: 100%;
     align-items: center;
     max-width: 100%;
-    margin: 40px 0px 40px 0px;
+    margin: 0px 15px 0px 15px;
     padding: 0px;
   }
 
-  .hero-column-left, .hero-column-right {
+  .hero-column-right {
     display: none; /* Ensure the right column remains hidden on mobile screens */
   }
 
