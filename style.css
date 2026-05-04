@@ -50,6 +50,15 @@ body {
   font-size: 1rem; /* Adjust text size */
 }
 
+.nav-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mini-logo { height: 40px; vertical-align: middle; margin-right: 10px; }
+.branding span {   font-size: 1.6rem; font-weight: bold; color: #020E54; }
+
 /* ---------------------- */
 /* Navigation Menu */
 .navbar {
@@ -1075,6 +1084,9 @@ th {
 /* Adjust for tablets and smaller devices */
 
 @media (max-width: 768px) {
+
+  .nav-row { flex-direction: column;
+  }
 
   .hamburger {
     display: block; 
