@@ -160,7 +160,7 @@ body {
 .hero-column-left {
   background-color:#ffffff90;
   flex: 1;
-  max-width: 12%;
+  max-width: 15%;
   display: flex;
   align-items: flex-start;
   justify-content:center;
@@ -181,7 +181,7 @@ body {
 
 .hero-column-right {
   flex: 5;
-  max-width: 48%;
+  max-width: 45%;
   margin: 100px 00px 100px 00px;
   padding: 20px;
 }
